@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Flip a coin/Bet game</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./abi.js?version=1"></script>
+    <script type="text/javascript" src="./main.js?version=1"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Bet Game Dapp</h1>
+        <p class="lead">Make your bet</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <h2>Make your bet:</h2>
+        <br>
+        <h5>
+        <tt> Heads </tt>
+        <input type="radio" name="headsOrTails" value="0" checked/>
+        <br>
+        <tt> Tails </tt>
+        <input type="radio" name="headsOrTails" value="1"/>
+        </h5>
+        <br>
+        <button type="button" id="make_bet_button" class="btn btn-primary">Make a bet</button>
+        <br>
+        <h3><span id="win"></span><h3>
+        <br><br>
+        <div>
+          <h5> Player's balance: <span id="player_balance">has not been requested yet</span> </h5>
+        </div>
+        <button type="button" id="get_player_balance_button" class="btn btn-primary">Player's balance</button>
+        <br>
+        <button type="button" id="claim_prize_button" class="btn btn-primary">Claim prize</button>
+        <br><br>
+
+      </div>
+
+      <div>
+        <div>
+          <h5> Game balance: <span id="game_balance">has not been requested yet</span> </h5>
+        </div>
+        <button type="button" id="get_game_balance_button" class="btn btn-primary">Get game balance</button>
+      </div>
+    <br><br>
+    <div>
+      <div>
+        <h5> Contract balance: <span id="contract_balance">has not been requested yet</span> </h5>
+      </div>
+      <button type="button" id="get_contract_balance_button" class="btn btn-primary">Get contract balance</button>
+    </div>
+  <br><br>
+    <div>
+      <div>
+        <h5> Wallet balance: <span id="wallet_balance">has not been requested yet</span> </h5>
+      </div>
+      <button type="button" id="get_wallet_balance_button" class="btn btn-primary">Get wallet balance</button>
+    </div>
+
+    <div>
+      <button type="button" id="destroy_button" class="btn btn-primary">Destroy contract as owner</button>
+    </div>
+
+  </div>
+
+
+  </body>
+</html>
